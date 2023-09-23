@@ -2,4 +2,164 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  inline-size: 100%;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+
+.header {
+  position: relative;
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+}
+
+.decorated-zone::before {
+  content: "";
+  width: 25.04px;
+  height: 25px;
+  background: transparent;
+  right: 0;
+  top: 10px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  position: absolute;
+}
+
+.decorated-zone::after {
+  content: "";
+  width: 25.04px;
+  height: 25px;
+  background: transparent;
+  bottom: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  position: absolute;
+}
+
+.decor-element::before {
+  content: "rec";
+  position: absolute;
+  right: 28px;
+  top: 10px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  line-height: 25px;
+}
+
+.decor-element::after {
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 18px;   
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+
+.header-title {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+  margin-block-start: 65px;
+  margin-block-end: 55px;
+}
+
+.title-decor {
+  color: var(--accent-text-color);
+  background-color: var(--accent-background-color);
+  font-weight: bold;  
+}
+
+
+.header .title-decor {
+  margin-block-end: 66px;
+}
+
+
+.header__theme-menu {
+  color: var(--accent-color);
+  margin-block-start: 75px;
+  justify-self: end;
+   
+
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  background-color: transparent;
+
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  background: transparent;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.content {
+  display: grid;
+  gap: 50px;
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+}
+
+.content__title {
+  color: var(--accent-color);
+  font-size: 18px;
+}
+
+.content__paragraph {
+  color: var(--main-text-color);
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.content__image-block {
+  display: grid;
+  gap: 10px;
+}
+
+.content-image {
+  max-width: 100%;
+}
+
+
+.footer {
+  position: relative;
+}
+
+.footer-title {
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-align: center;
+  line-height: 95.7px;
+  padding: 286px 0;
+
 }
