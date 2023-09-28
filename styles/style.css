@@ -65,7 +65,7 @@
   color: var(--accent-color, #FF0070);
   margin-block-start: 75px;
   align-self: end;
-  margin-inline-end: 10px;  
+  margin-inline-end: 10px;
 }
 
 .header__theme-menu-list {
@@ -113,7 +113,7 @@
 .title-decor {
   color: var(--accent-text-color, #000028);
   background-color: var(--accent-background-color, #FF0070);
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 .header__paragraph {
@@ -133,7 +133,7 @@
 .section__title {
   color: var(--accent-color, #FF0070);
   font-size: 18px;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 .article__title {
@@ -142,7 +142,7 @@
 }
 
 .article__paragraph {
-  color: var(--main-text-color, #F1B2CE); 
+  color: var(--main-text-color, #F1B2CE);
 }
 
 .section__list .section__item:not(:last-of-type) {
@@ -193,7 +193,7 @@
 
 .footer__title {
   text-shadow: 2px 2px 0 var(--title-shadow-color, #FF0070);
-  text-align: center;   
+  text-align: center;
 }
 
 @media(min-width:768px) {
@@ -213,17 +213,17 @@
 
   .header__decor-element::before {
     inset-inline-end: 48px;
-    inset-block-start: 20px;   
+    inset-block-start: 20px;
   }
   
   .header__decor-element::after {
     inset-inline-end: 28px;
-    inset-block-start: 28px;       
+    inset-block-start: 28px;
   }
 
   .header__theme-menu {
     margin-block-start: 192px;
-    margin-inline-end: 20px;  
+    margin-inline-end: 20px;
   }
 
   .main-title {
@@ -237,7 +237,7 @@
   .header__paragraph {
     max-inline-size: 364px;
     margin-inline-end: 20px;
-    align-self: end; 
+    align-self: end;
   }
 
   .content {
@@ -271,7 +271,7 @@
   }
 
   .content-image {
-    block-size: 100%;    
+    block-size: 100%;
   }
 
   .content-image:first-of-type {
@@ -312,7 +312,7 @@
   .header__theme-menu {
     margin-block-start: 20px;
     margin-inline-end: 0px;
-    align-self: center;    
+    align-self: center;
   }
 
   .header__theme-menu-list {
